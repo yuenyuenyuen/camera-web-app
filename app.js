@@ -55,11 +55,9 @@ frontCameraButton.onclick = function() {
     // Setup the button text
     if (frontCamera) {
         frontCameraButton.textContent = "Back Camera";
-        cameraDevice.scale.set(0, y, z);
     }
     else {
         frontCameraButton.textContent = "Front Camera";
-        cameraDevice.scale.set(-1, y, z);
     }
     // Start the video streaming
     cameraStart();
