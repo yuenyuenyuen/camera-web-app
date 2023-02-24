@@ -54,6 +54,7 @@ frontCameraButton.onclick = function() {
     // Setup the button text
     if (frontCamera) {
         frontCameraButton.textContent = "Back Camera";
+        cameraDevice.style.transform = "scaleX("+-1+")";
     }
     else {
         frontCameraButton.textContent = "Front Camera";
