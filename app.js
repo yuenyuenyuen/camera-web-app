@@ -52,13 +52,14 @@ frontCameraButton.onclick = function() {
     // Toggle the frontCamera variable
     frontCamera = !frontCamera;
     
-        cameraDevice.style.transform = "scaleX("+-1+")";
     // Setup the button text
     if (frontCamera) {
         frontCameraButton.textContent = "Back Camera";
+        cameraDevice.style.transform = "scaleX("+0+")";
     }
     else {
         frontCameraButton.textContent = "Front Camera";
+        cameraDevice.style.transform = "scaleX("+-1+")";
     }
     // Start the video streaming
     cameraStart();
